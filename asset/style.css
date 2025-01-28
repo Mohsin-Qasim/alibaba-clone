@@ -1,0 +1,161 @@
+  body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+  }
+  
+
+#logo {
+    align-items: center;
+    width: 180px;
+    margin: 4px;
+  }
+  
+  nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Left aur right alignment ke liye */
+  
+  }
+  
+  .btn-signup {
+    background: #ff6a00 !important;
+    color: white;
+    width: 110px;
+    border-radius: 40px;
+  }
+  
+  .btn-signup:hover {
+    background-color: #c65e0ddb !important;
+  }
+  
+  .deliver-to {
+    display: flex;
+    flex-direction: column; /* Text upar aur image neeche */
+    align-items: center; /* Image aur text ko center align karega */
+    margin-right: 20px; /* Right side spacing */
+    text-align: center; /* Text center align karega */
+    font-size: small;
+    
+  }
+  
+  .subheading {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    
+  }
+  .subheading1,
+.subheading2 {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+  .subheading a {
+    align-items: center ;
+    text-decoration: none;
+    padding: 10px; 
+  }
+  
+  .playback a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Parent container jisme dono sections hain */
+  .background-container {
+    background-image: url("/img/O1CN01ustqhi1Tz44lu4arh_!!6000000002452-0-tps-3840-1248.jpg_q60.avif"); /* Apni image ka path daalein */
+    background-size: cover; /* Image ko full screen fit karne ke liye */
+    background-position: center center; /* Image ko center mein set karne ke liye */
+    background-repeat: no-repeat; /* Image ko repeat na hone dene ke liye */
+  }
+  
+  /* Header aur main dono ko styling dena */
+  header,
+  main {
+    font-size: large;
+    color: white;
+    padding: 25px;
+  }
+  
+  /* Header ko customize karte hain */
+  header {
+    
+    background-color: rgba( 0,0,0,0.151); /* Slight transparency for readability */
+  }
+  
+  /* Main section ko customize karte hain */
+  #search-btn {
+    border-radius: 30px !important;
+    background: #ff6a00 !important;
+
+    color: white;
+
+    width: 100px;
+  }
+  #search-input {
+    border-radius: 30px !important;
+  }
+  .Frequently-search a {
+    text-decoration: none;
+    color: white;
+  }
+  /* second navbar  */
+  #second-navbar {
+    display: none; /* By default hidden */
+    position: fixed;
+    top: 0; /* Sticks to top on scroll */
+    width: 100%;
+    z-index: 1030; /* Ensure it stays above other content */
+  }
+  .spacer {
+    height: 100vh; /* Extra space to demonstrate scrolling */
+  }
+  /* third navbar  */
+ #third-navbar{
+  display: flex;
+  justify-content:space-evenly;
+  align-content: space-around;
+  width: 35rem;
+ }
+#logo3{
+  align-items: center;
+  width: 150px;
+  margin: 4px;  
+}
+#search-btn3{
+  border-radius: 20px !important;
+  background: #ff6a00 !important;
+
+  color: white;
+
+ 
+}
+#search-input3{
+  border-radius: 50px !important;
+
+}
+#input3{
+  width: 200px;
+}
+/* Hide third navbar by default */
+/* #third-navbar {
+  display: none;
+} */
+
+/* Show third navbar only on small screens
+@media (max-width: 767px) {
+  #third-navbar {
+      display: block;
+  }
+} */
+
+/* Optional: hide other navbars for small screens */
+@media (max-width: 767px) {
+  #first-navbar, #second-navbar {
+      display: none;
+  }
+}
