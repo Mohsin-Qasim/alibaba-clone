@@ -159,3 +159,23 @@
       display: none;
   }
 }
+.row-card{
+  background-color: #461c08;
+}
+.navcard{
+  background-color:#5a2e1ae5 ;
+}
+.card-img{
+  border-radius: 50%;
+  width: 50px;
+display: flex;
+align-items: center;
+background-color: #461c08;
+
+}
+.card-img a {
+  width: 40px;
+  border-radius: 50px;
+  margin: 5px;
+
+}
