@@ -87,18 +87,33 @@
     background-color: rgba( 0,0,0,0.151); /* Slight transparency for readability */
   }
   
-  /* Main section ko customize karte hain */
-  #search-btn {
-    border-radius: 30px !important;
-    background: #ff6a00 !important;
-
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 22px;
+    padding: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 700px; 
+    /* margin: auto; */
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+}
+.search-bar button {
+    background: #ff6600;
+    border: none;
     color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
 
-    width: 100px;
-  }
-  #search-input {
-    border-radius: 30px !important;
-  }
   .Frequently-search a {
     text-decoration: none;
     color: white;
@@ -114,7 +129,7 @@
   .spacer {
     height: 100vh; /* Extra space to demonstrate scrolling */
   }
-  /* third navbar  */
+  /* third navbar 
  #third-navbar{
   display: flex;
   justify-content:space-evenly;
@@ -140,7 +155,7 @@
 }
 #input3{
   width: 200px;
-}
+} */
 /* Hide third navbar by default */
 /* #third-navbar {
   display: none;
@@ -159,11 +174,32 @@
       display: none;
   }
 }
-.row-card{
+.cards{
+ 
+  height: 600px;
+  
   background-color: #461c08;
 }
+#cardrow{
+  display: flex;
+  justify-content: space-around;
+}
 .navcard{
+  cursor: pointer;
+  margin: 128px 30px;
+padding: 16px;
+  border-radius: 30px;
+  width: 330px;
+  /* text-align: center; */
+  height: 350px;
   background-color:#5a2e1ae5 ;
+}
+.navcard:hover{
+  background-color: #9c582ba6;
+}
+.card-img:hover{
+  background-color: #a65834;
+  color: white;
 }
 .card-img{
   border-radius: 50%;
