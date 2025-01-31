@@ -176,13 +176,13 @@
 }
 .cards{
  
-  height: 600px;
-  
+  height: 600px;   
   background-color: #461c08;
 }
 #cardrow{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .navcard{
   cursor: pointer;
@@ -214,4 +214,8 @@ background-color: #461c08;
   border-radius: 50px;
   margin: 5px;
 
+}
+#headsignup{
+  font-weight: bolder;
+  color: #f9630c;
 }
