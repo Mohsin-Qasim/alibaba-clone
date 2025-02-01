@@ -215,7 +215,43 @@ background-color: #461c08;
   margin: 5px;
 
 }
-#headsignup{
-  font-weight: bolder;
-  color: #f9630c;
-}
+
+  /* Checkbox Custom Styling */
+    .custom-checkbox {
+        width: 20px; /* Checkbox Size */
+        height: 20px;
+        transform: scale(1.5); /* Make it Bigger */
+        
+    }
+
+    /* Anchor Tag Color */
+    .form-check-label a {
+        color: #f9630c !important;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    /* Anchor Hover Effect */
+    .form-check-label a:hover {
+        text-decoration: underline;
+    }
+    #signup-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center ;
+
+    }
+    #signup-btn button  {
+
+      color: white;
+      background-color: #f9630c;
+      width: 35rem  ;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      font-weight: bold;
+      
+    }
+    #signup-btn button:hover{
+      background-color: whitesmoke !important;
+      color: #f9630c;
+    }
