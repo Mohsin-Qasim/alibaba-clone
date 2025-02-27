@@ -1,7 +1,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: 300vh;
   }
   
 
@@ -252,6 +252,29 @@ background-color: #461c08;
       
     }
     #signup-btn button:hover{
-      background-color: whitesmoke !important;
+      background-color: #f5f5f5 !important;
       color: #f9630c;
     }
+    .border-success{
+border: 2px solid green !important;
+
+}
+.border-danger{
+  border: 2px solid red;
+}
+.detailsNo{
+  color: #f9630c;
+  font: 2em sans-serif;
+  font-weight:normal;
+}
+#electronicPage{
+  background-image: url(/img/O1CN01IG66It1ZCrw40fyRX_!!6000000003159-2-tps-1920-240.png_q60.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+.titleElec{
+  background-color: rgba( 0,0,0,0.151); /* Slight transparency for readability */
+
+}
