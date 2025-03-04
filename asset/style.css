@@ -1,7 +1,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 400vh;
   }
   
 
@@ -277,4 +277,31 @@ border: 2px solid green !important;
 .titleElec{
   background-color: rgba( 0,0,0,0.151); /* Slight transparency for readability */
 
+}
+#lpImg{
+  height: 280px;
+  width: 100%;
+
+}
+#lpCard{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+box-shadow: 0 3px 10px rgb(240, 134, 152);
+  
+}
+#lptitile{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  background: radial-gradient(circle, #030f13ce, rgb(34, 95, 133));
+border: 2px double black;
+
+  color:white;
+}
+#productList{
+  margin: 5px;
+  padding: 20px;
+  background-color: #02181fdd;
+  
 }

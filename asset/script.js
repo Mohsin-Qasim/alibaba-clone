@@ -1,4 +1,42 @@
-  // Show the second navbar on scroll
+import {  Electronics} from "./product.js";
+  let productList = document.getElementById("productList");
+
+  function discount(price) {
+    return (price * 0.8).toFixed(2); // 20% discount
+  }
+
+  let updateDiscount = Electronics.map(function (product) {
+    return {
+      name: product.Name,
+      img: product.Image,
+      status: product.sold,
+      price: parseFloat( product.Price),
+      discounted: discount(product.Price)
+    };
+  });
+
+  updateDiscount.forEach(function (product) {
+    let productDiv = document.createElement("div");
+    productDiv.className = "col-md-4 col-sm-6";
+    productDiv.innerHTML = `
+      <div class="card" id="lpCard">
+        <img src="${product.img}" class="card-img-top" id="lpImg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">${product.name}</h5>
+          <p class="card-text text-secondary fs-3">Rs.<del>${product.price}</del></p>
+          <p class="card-text  fs-2" style="color:#f9630c">Rs.${product.discounted}</p>
+          <p class="card-text text-secondary fs-5">Sold: ${product.status}</p>
+          <a href="#" class="btn  w-100" style=" background-color: #f9630c ;color:white";>Buy Now</a>
+        </div>
+      </div>
+    `;
+    productList.appendChild(productDiv);
+  });
+
+
+
+
+// Show the second navbar on scroll
   window.addEventListener('scroll', () => {
     const secondNavbar = document.getElementById('second-navbar');
     if (window.scrollY > 150) { // Adjust scroll value as needed
@@ -109,5 +147,4 @@ submit.addEventListener("click", function (e) {
 
  }
 else{ countryError.textContent=""}
-});
-
+})
